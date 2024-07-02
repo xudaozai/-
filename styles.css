@@ -1,0 +1,199 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 设置全局字体 */
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); /* 设置背景为从左到右的线性渐变 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    height: 155vh; /* 设置高度为视口高度 */
+}
+
+.container {
+    background-color: #ffffff; /* 设置容器背景色为白色 */
+    padding: 30px; /* 设置内边距为 30px */
+    border-radius: 15px; /* 设置圆角半径为 15px */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    text-align: center; /* 文本居中对齐 */
+    animation: fadeIn 1s ease-in-out; /* 应用淡入动画 */
+    width: 100%; /* 设置宽度为 100% */
+    max-width: 600px; /* 最大宽度为 600px */
+    margin: 20px; /* 设置外边距为 20px */
+}
+
+h1 {
+    font-size: 2.5rem; /* 设置字体大小为 2.5rem */
+    color: #333; /* 设置字体颜色为 #333 */
+    margin-bottom: 20px; /* 设置底部外边距为 20px */
+}
+
+.form-group label {
+    font-weight: bold; /* 设置字体加粗 */
+    color: #555; /* 设置字体颜色为 #555 */
+}
+
+.form-control {
+    border-radius: 5px; /* 设置圆角半径为 5px */
+    padding: 10px; /* 设置内边距为 10px */
+    margin-bottom: 10px; /* 设置底部外边距为 10px */
+}
+
+.form-check-label {
+    color: #555; /* 设置字体颜色为 #555 */
+}
+
+.buttons .btn {
+    font-size: 1.1rem; /* 设置字体大小为 1.1rem */
+    padding: 10px; /* 设置内边距为 10px */
+    margin-bottom: 10px; /* 设置底部外边距为 10px */
+}
+
+.result p {
+    font-size: 1.2rem; /* 设置字体大小为 1.2rem */
+    text-align: left; /* 文本左对齐 */
+    background-color: #f9f9f9; /* 设置背景颜色为 #f9f9f9 */
+    padding: 10px; /* 设置内边距为 10px */
+    border-radius: 5px; /* 设置圆角半径为 5px */
+    margin-bottom: 10px; /* 设置底部外边距为 10px */
+    position: relative; /* 设置相对定位 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+.result span {
+    font-weight: bold; /* 设置字体加粗 */
+    color: #333; /* 设置字体颜色为 #333 */
+}
+
+.result button {
+    position: absolute; /* 设置绝对定位 */
+    right: 10px; /* 右边距为 10px */
+    top: 10px; /* 上边距为 10px */
+    padding: 5px 10px; /* 设置内边距为 5px 10px */
+}
+
+#copyUsername, #copyAccount, #copyPassword {
+    margin-left: 10px; /* 设置左边距为 10px */
+}
+
+.help {
+    text-align: left; /* 文本左对齐 */
+    background-color: #f1f1f1; /* 设置背景颜色为 #f1f1f1 */
+    padding: 15px; /* 设置内边距为 15px */
+    border-radius: 5px; /* 设置圆角半径为 5px */
+    margin-top: 20px; /* 设置顶部外边距为 20px */
+}
+
+.help h5 {
+    font-size: 1.2rem; /* 设置字体大小为 1.2rem */
+    color: #333; /* 设置字体颜色为 #333 */
+    margin-bottom: 10px; /* 设置底部外边距为 10px */
+}
+
+.help p {
+    margin: 5px 0; /* 设置上下外边距为 5px，左右外边距为 0 */
+    color: #555; /* 设置字体颜色为 #555 */
+}
+
+button {
+    transition: background-color 0.3s ease, color 0.3s ease; /* 设置背景色和字体颜色的过渡效果 */
+}
+
+button:hover {
+    background-color: #007bff; /* 设置按钮悬停时的背景颜色 */
+    color: #fff; /* 设置按钮悬停时的字体颜色 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* 动画开始时的不透明度 */
+    }
+    to {
+        opacity: 1; /* 动画结束时的不透明度 */
+    }
+}
+
+/* 工具提示样式 */
+.tooltip-inner {
+    max-width: 200px; /* 设置最大宽度为 200px */
+    padding: 8px; /* 设置内边距为 8px */
+    color: #fff; /* 设置字体颜色为白色 */
+    text-align: center; /* 文本居中对齐 */
+    background-color: #000; /* 设置背景颜色为黑色 */
+    border-radius: 6px; /* 设置圆角半径为 6px */
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, 
+.tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: #000; /* 设置上箭头的颜色 */
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, 
+.tooltip.bs-tooltip-right .arrow::before {
+    border-right-color: #000; /* 设置右箭头的颜色 */
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, 
+.tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #000; /* 设置下箭头的颜色 */
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, 
+.tooltip.bs-tooltip-left .arrow::before {
+    border-left-color: #000; /* 设置左箭头的颜色 */
+}
+
+/* 按钮样式 */
+.btn-info {
+    background-color: #17a2b8; /* 设置背景颜色为 #17a2b8 */
+    border-color: #17a2b8; /* 设置边框颜色为 #17a2b8 */
+    color: #fff; /* 设置字体颜色为白色 */
+}
+
+.btn-primary {
+    background-color: #007bff; /* 设置背景颜色为 #007bff */
+    border-color: #007bff; /* 设置边框颜色为 #007bff */
+    color: #fff; /* 设置字体颜色为白色 */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* 设置背景颜色为 #6c757d */
+    border-color: #6c757d; /* 设置边框颜色为 #6c757d */
+    color: #fff; /* 设置字体颜色为白色 */
+}
+
+.btn-success {
+    background-color: #28a745; /* 设置背景颜色为 #28a745 */
+    border-color: #28a745; /* 设置边框颜色为 #28a745 */
+    color: #fff; /* 设置字体颜色为白色 */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* 设置背景颜色为 #ffc107 */
+    border-color: #ffc107; /* 设置边框颜色为 #ffc107 */
+    color: #212529; /* 设置字体颜色为 #212529 */
+}
+
+.btn-block {
+    display: block; /* 设置为块级元素 */
+    width: 100%; /* 设置宽度为 100% */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* 设置宽度为 90% */
+        margin: 10px auto; /* 设置上下外边距为 10px，左右居中 */
+    }
+    
+    h1 {
+        font-size: 2rem; /* 设置字体大小为 2rem */
+    }
+
+    .form-group label, .help h5 {
+        font-size: 1rem; /* 设置字体大小为 1rem */
+    }
+
+    .form-control, .buttons .btn, .result p, .help p {
+        font-size: 0.9rem; /* 设置字体大小为 0.9rem */
+    }
+}
